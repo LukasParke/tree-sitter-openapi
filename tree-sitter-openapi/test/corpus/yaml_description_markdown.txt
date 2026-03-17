@@ -1,0 +1,30 @@
+====================
+YAML with description block scalar
+====================
+
+openapi: "3.0.0"
+info:
+  description: |
+    This is **Markdown** in a description.
+    - list item
+paths: {}
+
+---
+
+(stream
+  (document
+    (block_node
+      (block_mapping
+        (block_mapping_pair
+          key: (flow_node (plain_scalar (string_scalar)))
+          value: (flow_node (double_quote_scalar)))
+        (block_mapping_pair
+          key: (flow_node (plain_scalar (string_scalar)))
+          value: (block_node
+            (block_mapping
+              (block_mapping_pair
+                key: (flow_node (plain_scalar (string_scalar)))
+                value: (block_node (block_scalar))))))
+        (block_mapping_pair
+          key: (flow_node (plain_scalar (string_scalar)))
+          value: (flow_node (flow_mapping)))))))

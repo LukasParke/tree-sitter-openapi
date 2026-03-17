@@ -1,0 +1,59 @@
+====================
+Flow mapping and sequence in OpenAPI
+====================
+
+openapi: "3.0.0"
+security: []
+tags: [pet, store]
+paths:
+  /ping:
+    get: {}
+
+---
+
+(stream
+  (document
+    (block_node
+      (block_mapping
+        (block_mapping_pair
+          (flow_node
+            (plain_scalar
+              (string_scalar)))
+          (flow_node
+            (double_quote_scalar)))
+        (block_mapping_pair
+          (flow_node
+            (plain_scalar
+              (string_scalar)))
+          (flow_node
+            (flow_sequence)))
+        (block_mapping_pair
+          (flow_node
+            (plain_scalar
+              (string_scalar)))
+          (flow_node
+            (flow_sequence
+              (flow_node
+                (plain_scalar
+                  (string_scalar)))
+              (flow_node
+                (plain_scalar
+                  (string_scalar))))))
+        (block_mapping_pair
+          (flow_node
+            (plain_scalar
+              (string_scalar)))
+          (block_node
+            (block_mapping
+              (block_mapping_pair
+                (flow_node
+                  (plain_scalar
+                    (string_scalar)))
+                (block_node
+                  (block_mapping
+                    (block_mapping_pair
+                      (flow_node
+                        (plain_scalar
+                          (string_scalar)))
+                      (flow_node
+                        (flow_mapping)))))))))))))

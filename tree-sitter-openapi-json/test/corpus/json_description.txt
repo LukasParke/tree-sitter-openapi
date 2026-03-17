@@ -1,0 +1,16 @@
+====================
+JSON with description field
+====================
+
+{"info":{"description":"**Markdown** here."}}
+
+---
+
+(document
+  (object
+    (pair
+      key: (string (string_content))
+      value: (object
+        (pair
+          key: (string (string_content))
+          value: (string (string_content)))))))

@@ -1,0 +1,57 @@
+====================
+OpenAPI tags and servers arrays
+====================
+
+{"openapi":"3.0.0","tags":[{"name":"pet"},{"name":"store"}],"servers":[{"url":"https://api.example.com"}]}
+
+---
+
+(document
+  (object
+    (pair
+      key: (string (string_content))
+      value: (string (string_content)))
+    (pair
+      key: (string (string_content))
+      value: (array
+        (object
+          (pair
+            key: (string (string_content))
+            value: (string (string_content))))
+        (object
+          (pair
+            key: (string (string_content))
+            value: (string (string_content))))))
+    (pair
+      key: (string (string_content))
+      value: (array
+        (object
+          (pair
+            key: (string (string_content))
+            value: (string (string_content))))))))
+
+====================
+Primitives and description string
+====================
+
+{"info":{"description":"Simple","version":1,"deprecated":false,"nullable":null}}
+
+---
+
+(document
+  (object
+    (pair
+      key: (string (string_content))
+      value: (object
+        (pair
+          key: (string (string_content))
+          value: (string (string_content)))
+        (pair
+          key: (string (string_content))
+          value: (number))
+        (pair
+          key: (string (string_content))
+          value: (false))
+        (pair
+          key: (string (string_content))
+          value: (null))))))

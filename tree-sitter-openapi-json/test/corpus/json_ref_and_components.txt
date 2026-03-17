@@ -1,0 +1,40 @@
+====================
+Components schemas and $ref values
+====================
+
+{"components":{"schemas":{"Pet":{"type":"object","properties":{"id":{"$ref":"#/components/schemas/Id"}}}}}}
+
+---
+
+(document
+  (object
+    (pair
+      key: (string
+        (string_content))
+      value: (object
+        (pair
+          key: (string
+            (string_content))
+          value: (object
+            (pair
+              key: (string
+                (string_content))
+              value: (object
+                (pair
+                  key: (string
+                    (string_content))
+                  value: (string
+                    (string_content)))
+                (pair
+                  key: (string
+                    (string_content))
+                  value: (object
+                    (pair
+                      key: (string
+                        (string_content))
+                      value: (object
+                        (pair
+                          key: (string
+                            (string_content))
+                          value: (string
+                            (string_content)))))))))))))))

@@ -1,0 +1,22 @@
+====================
+Basic JSON OpenAPI
+====================
+
+{"openapi":"3.0.0","info":{"title":"API"},"paths":{}}
+
+---
+
+(document
+  (object
+    (pair
+      key: (string (string_content))
+      value: (string (string_content)))
+    (pair
+      key: (string (string_content))
+      value: (object
+        (pair
+          key: (string (string_content))
+          value: (string (string_content)))))
+    (pair
+      key: (string (string_content))
+      value: (object))))

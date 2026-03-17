@@ -1,0 +1,48 @@
+====================
+Object with block and line comments
+====================
+
+{"openapi":"3.0.0","info":{/* block */"title":"API"},"paths":{}}
+
+---
+
+(document
+  (object
+    (pair
+      key: (string (string_content))
+      value: (string (string_content)))
+    (pair
+      key: (string (string_content))
+      value: (object
+        (comment)
+        (pair
+          key: (string (string_content))
+          value: (string (string_content)))))
+    (pair
+      key: (string (string_content))
+      value: (object))))
+
+====================
+Line comment before pair
+====================
+
+{"openapi":"3.0.0","info":{"title":"API"},// line comment
+"paths":{}}
+
+---
+
+(document
+  (object
+    (pair
+      key: (string (string_content))
+      value: (string (string_content)))
+    (pair
+      key: (string (string_content))
+      value: (object
+        (pair
+          key: (string (string_content))
+          value: (string (string_content)))))
+    (comment)
+    (pair
+      key: (string (string_content))
+      value: (object))))

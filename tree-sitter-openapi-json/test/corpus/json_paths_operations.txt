@@ -1,0 +1,77 @@
+====================
+Paths with get and post operations
+====================
+
+{"paths":{"/pets":{"get":{"summary":"List pets","parameters":[{"name":"limit","in":"query"}],"responses":{"200":{"description":"OK"}}},"post":{"summary":"Create pet","responses":{"201":{"description":"Created"}}}}}}
+
+---
+
+(document
+  (object
+    (pair
+      key: (string
+        (string_content))
+      value: (object
+        (pair
+          key: (string
+            (string_content))
+          value: (object
+            (pair
+              key: (string
+                (string_content))
+              value: (object
+                (pair
+                  key: (string
+                    (string_content))
+                  value: (string
+                    (string_content)))
+                (pair
+                  key: (string
+                    (string_content))
+                  value: (array
+                    (object
+                      (pair
+                        key: (string
+                          (string_content))
+                        value: (string
+                          (string_content)))
+                      (pair
+                        key: (string
+                          (string_content))
+                        value: (string
+                          (string_content))))))
+                (pair
+                  key: (string
+                    (string_content))
+                  value: (object
+                    (pair
+                      key: (string
+                        (string_content))
+                      value: (object
+                        (pair
+                          key: (string
+                            (string_content))
+                          value: (string
+                            (string_content)))))))))
+            (pair
+              key: (string
+                (string_content))
+              value: (object
+                (pair
+                  key: (string
+                    (string_content))
+                  value: (string
+                    (string_content)))
+                (pair
+                  key: (string
+                    (string_content))
+                  value: (object
+                    (pair
+                      key: (string
+                        (string_content))
+                      value: (object
+                        (pair
+                          key: (string
+                            (string_content))
+                          value: (string
+                            (string_content)))))))))))))))

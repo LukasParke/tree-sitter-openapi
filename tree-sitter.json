@@ -1,0 +1,39 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "openapi",
+      "scope": "source.openapi",
+      "path": "tree-sitter-openapi",
+      "file-types": ["yaml", "yml"],
+      "highlights": "tree-sitter-openapi/queries/highlights.scm",
+      "injections": "tree-sitter-openapi/queries/injections.scm",
+      "folds": "tree-sitter-openapi/queries/folds.scm",
+      "injection-regex": "^(openapi|yaml|yml)$"
+    },
+    {
+      "name": "openapi_json",
+      "camelcase": "OpenapiJson",
+      "scope": "source.openapi.json",
+      "path": "tree-sitter-openapi-json",
+      "file-types": ["json"],
+      "highlights": "tree-sitter-openapi-json/queries/highlights.scm",
+      "injections": "tree-sitter-openapi-json/queries/injections.scm",
+      "folds": "tree-sitter-openapi-json/queries/folds.scm",
+      "injection-regex": "^(openapi_json|json)$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "OpenAPI grammar for tree-sitter (YAML and JSON with Markdown in descriptions)",
+    "links": {
+      "repository": "https://github.com/tree-sitter-openapi/tree-sitter-openapi"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "node": true,
+    "rust": true
+  }
+}

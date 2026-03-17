@@ -1,0 +1,91 @@
+====================
+Paths with get and post operations
+====================
+
+openapi: "3.0.0"
+paths:
+  /pets:
+    get:
+      summary: List pets
+      description: Returns all pets
+    post:
+      summary: Create pet
+      responses:
+        "201":
+          description: Created
+
+---
+
+(stream
+  (document
+    (block_node
+      (block_mapping
+        (block_mapping_pair
+          (flow_node
+            (plain_scalar
+              (string_scalar)))
+          (flow_node
+            (double_quote_scalar)))
+        (block_mapping_pair
+          (flow_node
+            (plain_scalar
+              (string_scalar)))
+          (block_node
+            (block_mapping
+              (block_mapping_pair
+                (flow_node
+                  (plain_scalar
+                    (string_scalar)))
+                (block_node
+                  (block_mapping
+                    (block_mapping_pair
+                      (flow_node
+                        (plain_scalar
+                          (string_scalar)))
+                      (block_node
+                        (block_mapping
+                          (block_mapping_pair
+                            (flow_node
+                              (plain_scalar
+                                (string_scalar)))
+                            (flow_node
+                              (plain_scalar
+                                (string_scalar))))
+                          (block_mapping_pair
+                            (flow_node
+                              (plain_scalar
+                                (string_scalar)))
+                            (flow_node
+                              (plain_scalar
+                                (string_scalar)))))))
+                    (block_mapping_pair
+                      (flow_node
+                        (plain_scalar
+                          (string_scalar)))
+                      (block_node
+                        (block_mapping
+                          (block_mapping_pair
+                            (flow_node
+                              (plain_scalar
+                                (string_scalar)))
+                            (flow_node
+                              (plain_scalar
+                                (string_scalar))))
+                          (block_mapping_pair
+                            (flow_node
+                              (plain_scalar
+                                (string_scalar)))
+                            (block_node
+                              (block_mapping
+                                (block_mapping_pair
+                                  (flow_node
+                                    (double_quote_scalar))
+                                  (block_node
+                                    (block_mapping
+                                      (block_mapping_pair
+                                        (flow_node
+                                          (plain_scalar
+                                            (string_scalar)))
+                                        (flow_node
+                                          (plain_scalar
+                                            (string_scalar)))))))))))))))))))))))

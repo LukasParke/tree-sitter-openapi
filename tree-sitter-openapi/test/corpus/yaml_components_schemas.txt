@@ -1,0 +1,77 @@
+====================
+Components schemas with nested properties
+====================
+
+components:
+  schemas:
+    Pet:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+
+---
+
+(stream
+  (document
+    (block_node
+      (block_mapping
+        (block_mapping_pair
+          (flow_node
+            (plain_scalar
+              (string_scalar)))
+          (block_node
+            (block_mapping
+              (block_mapping_pair
+                (flow_node
+                  (plain_scalar
+                    (string_scalar)))
+                (block_node
+                  (block_mapping
+                    (block_mapping_pair
+                      (flow_node
+                        (plain_scalar
+                          (string_scalar)))
+                      (block_node
+                        (block_mapping
+                          (block_mapping_pair
+                            (flow_node
+                              (plain_scalar
+                                (string_scalar)))
+                            (flow_node
+                              (plain_scalar
+                                (string_scalar))))
+                          (block_mapping_pair
+                            (flow_node
+                              (plain_scalar
+                                (string_scalar)))
+                            (block_node
+                              (block_mapping
+                                (block_mapping_pair
+                                  (flow_node
+                                    (plain_scalar
+                                      (string_scalar)))
+                                  (block_node
+                                    (block_mapping
+                                      (block_mapping_pair
+                                        (flow_node
+                                          (plain_scalar
+                                            (string_scalar)))
+                                        (flow_node
+                                          (plain_scalar
+                                            (string_scalar)))))))
+                                (block_mapping_pair
+                                  (flow_node
+                                    (plain_scalar
+                                      (string_scalar)))
+                                  (block_node
+                                    (block_mapping
+                                      (block_mapping_pair
+                                        (flow_node
+                                          (plain_scalar
+                                            (string_scalar)))
+                                        (flow_node
+                                          (plain_scalar
+                                            (string_scalar)))))))))))))))))))))))

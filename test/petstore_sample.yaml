@@ -1,0 +1,14 @@
+openapi: 3.0.4
+info:
+  title: Swagger Petstore - OpenAPI 3.0
+  description: |
+    This is a sample **Pet Store** Server.
+    See [Swagger](https://swagger.io) for more.
+  version: 1.0.27
+paths:
+  /pet:
+    get:
+      summary: List pets
+      description: Returns all pets.
+servers:
+  - url: https://petstore3.swagger.io/api/v3

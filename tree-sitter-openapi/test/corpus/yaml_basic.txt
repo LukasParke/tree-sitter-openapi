@@ -1,0 +1,32 @@
+====================
+Basic YAML OpenAPI
+====================
+
+openapi: "3.0.0"
+info:
+  title: Sample API
+  version: "1.0"
+paths: {}
+
+---
+
+(stream
+  (document
+    (block_node
+      (block_mapping
+        (block_mapping_pair
+          key: (flow_node (plain_scalar (string_scalar)))
+          value: (flow_node (double_quote_scalar)))
+        (block_mapping_pair
+          key: (flow_node (plain_scalar (string_scalar)))
+          value: (block_node
+            (block_mapping
+              (block_mapping_pair
+                key: (flow_node (plain_scalar (string_scalar)))
+                value: (flow_node (plain_scalar (string_scalar))))
+              (block_mapping_pair
+                key: (flow_node (plain_scalar (string_scalar)))
+                value: (flow_node (double_quote_scalar))))))
+        (block_mapping_pair
+          key: (flow_node (plain_scalar (string_scalar)))
+          value: (flow_node (flow_mapping)))))))
